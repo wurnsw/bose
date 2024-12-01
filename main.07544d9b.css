@@ -36,6 +36,7 @@ address {
 .page {
   font-family: "Inter", sans-serif;
   color: #292929;
+  scroll-behavior: smooth;
 }
 .page__body:has(.nav:target) {
   overflow: hidden;
@@ -298,6 +299,41 @@ address {
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 744px) {
+  .about__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.about__title {
+  text-align: start;
+}
+@media screen and (min-width: 744px) {
+  .about__description {
+    width: 288px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__description {
+    width: 498px;
+  }
+}
+.about__subtitles {
+  font-size: 16px;
+  line-height: 27px;
+}
+.about__subtitles--important {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  line-height: 43px;
 }
 
 .footer {
