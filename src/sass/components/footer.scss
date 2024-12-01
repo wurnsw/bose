@@ -1,0 +1,23 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+
+  z-index: -1;
+
+  height: 200px;
+
+  background-image: url("../images/bg--footer.webp");
+
+  @include bgImage;
+
+  @include bg-footer-pixelRatio-2;
+  @include bg-footer-pixelRatio-3;
+
+  @include onTablet {
+    height: 400px;
+  }
+
+  @include onDesktop {
+    height: 460px;
+  }
+}
