@@ -1,0 +1,37 @@
+.about {
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    text-align: start;
+  }
+
+  &__description {
+    @include onTablet {
+      width: 288px;
+    }
+
+    @include onDesktop {
+      width: 498px;
+    }
+  }
+
+  &__subtitles {
+    font-size: 16px;
+    line-height: 27px;
+
+    &--important {
+      margin-bottom: 40px;
+
+      @include secondaryTypography;
+      line-height: 43px;
+    }
+  }
+}

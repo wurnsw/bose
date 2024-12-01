@@ -2,6 +2,8 @@
   font-family: $font-main;
   color: $font-main-color;
 
+  scroll-behavior: smooth;
+
   &__body {
     &:has(.nav:target) {
       overflow: hidden;
