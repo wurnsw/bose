@@ -1,234 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./sass/main.scss" />
     <title>BOSE</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header__top top">
-        <img src="./images/logo.png" alt="Bose logo" class="top__logo" />
-        <img
-          src="./images/Icon-Burger-menu.png"
-          alt="Burger-menu"
-          class="top__burger-menu"
-        />
-      </div>
-      <div class="header__bottom">
-        <img src="./images/sound.png" alt="Sound waves" class="header__sound" />
+  <body class="page__body">
+    <header class="header" id="home">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top top">
+            <img src="./images/logo.png" alt="Bose logo" class="top__logo" />
 
-        <h1 class="header__title">
-          The world shades.
-          <br />
-          Your music shines.
-        </h1>
+            <a class="top__burger-menu" href="#menu"></a>
+          </div>
+          <div class="header__bottom">
+            <img
+              src="./images/sound.png"
+              alt="Sound waves"
+              class="header__sound-image"
+            />
+            <h1 class="header__title">
+              The world shades.
+              <br />
+              Your music shines.
+            </h1>
+          </div>
+        </div>
       </div>
     </header>
 
-    <nav class="nav">
-      <div class="nav__top top">
-        <img src="./images/logo.png" alt="Bose logo" class="top__logo" />
-        <img
-          src="./images/Icon-Close.png"
-          alt="Burger-menu"
-          class="top__burger-menu top__burger-menu--close"
-        />
+    <nav class="nav" id="menu">
+      <div class="container">
+        <div class="nav__top top">
+          <img src="./images/logo.png" alt="Bose logo" class="top__logo" />
+          <a class="top__burger-menu top__burger-menu--close" href="#home"></a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#home"> Home </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#recommended"> recommended </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#categories"> categories </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about"> How to buy </a>
+          </li>
+        </ul>
       </div>
-
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#"> Home </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#"> recommended </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#"> categories </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#"> How to buy </a>
-        </li>
-      </ul>
     </nav>
 
     <main>
-      <section class="section recommended">
-        <h2 class="section__title">Recommended</h2>
-
-        <div class="recommended__product product">
-          <img
-            class="product__image"
-            srcset="
-              ./images/product--1--324.webp 1x,
-              ./images/product--1--648.webp 2x,
-              ./images/product--1--972.webp 3x
-            "
-            src="./images/product--1--324.webp"
-            alt="Product 1"
-          />
-
-          <div class="product__info">
-            <h3 class="product__name">Bose portable Smart speaker</h3>
-            <p class="product__description">Smart home</p>
-            <p class="product__price">$ 399.00</p>
+      <section class="page__section recommended" id="recommended" hidden>
+        <div class="container">
+          <h2 class="page__section-title">Recommended</h2>
+          <div class="recommended__product product">
+            <img
+              class="product__image"
+              srcset="
+                ./images/product--1--324.webp 1x,
+                ./images/product--1--648.webp 2x,
+                ./images/product--1--972.webp 3x
+              "
+              src="./images/product--1--324.webp"
+              alt="Product 1"
+            />
+            <div class="product__info">
+              <h3 class="product__name">Bose portable Smart speaker</h3>
+              <p class="product__description">Smart home</p>
+              <p class="product__price">$ 399.00</p>
+            </div>
           </div>
-        </div>
-
-        <div class="recommended__product product">
-          <img
-            class="product__image"
-            srcset="
-              ./images/product--2--324.webp 1x,
-              ./images/product--2--648.webp 2x,
-              ./images/product--2--972.webp 3x
-            "
-            src="./images/product--2--324.webp"
-            alt="Product 2"
-          />
-
-          <div class="product__info">
-            <h3 class="product__name">SoundLink Flex Bluetooth speaker</h3>
-            <p class="product__description">Portable bluetooth</p>
-            <p class="product__price">$ 149.00</p>
+          <div class="recommended__product product">
+            <img
+              class="product__image"
+              srcset="
+                ./images/product--2--324.webp 1x,
+                ./images/product--2--648.webp 2x,
+                ./images/product--2--972.webp 3x
+              "
+              src="./images/product--2--324.webp"
+              alt="Product 2"
+            />
+            <div class="product__info">
+              <h3 class="product__name">SoundLink Flex Bluetooth speaker</h3>
+              <p class="product__description">Portable bluetooth</p>
+              <p class="product__price">$ 149.00</p>
+            </div>
           </div>
-        </div>
-
-        <div class="recommended__product product">
-          <img
-            class="product__image"
-            srcset="
-              ./images/product--3--324.webp 1x,
-              ./images/product--3--648.webp 2x,
-              ./images/product--3--972.webp 3x
-            "
-            src="./images/product--3--324.webp"
-            alt="Product 3"
-          />
-
-          <div class="product__info">
-            <h3 class="product__name">SoundLink Color Bluetooth speaker II</h3>
-            <p class="product__description">Portable bluetooth</p>
-            <p class="product__price">$ 129.00</p>
+          <div class="recommended__product product">
+            <img
+              class="product__image"
+              srcset="
+                ./images/product--3--324.webp 1x,
+                ./images/product--3--648.webp 2x,
+                ./images/product--3--972.webp 3x
+              "
+              src="./images/product--3--324.webp"
+              alt="Product 3"
+            />
+            <div class="product__info">
+              <h3 class="product__name">
+                SoundLink Color Bluetooth speaker II
+              </h3>
+              <p class="product__description">Portable bluetooth</p>
+              <p class="product__price">$ 129.00</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section categories">
-        <h2 class="section__title">
-          Browse Bose
-          <br />
-          products by category
-        </h2>
-
-        <ul class="categories__list">
-          <li class="categories__item category">
-            <figure class="category__info">
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--1--672.webp  1x,
-                  ./images/category--1--1344.webp 2x,
-                  ./images/category--1--2016.webp 3x
-                "
-                src="./images/category--1--672.webp"
-                alt="Category image"
-              />
-
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--2--324.webp 1x,
-                  ./images/category--2--648.webp 2x,
-                  ./images/category--2--972.webp 3x
-                "
-                src="./images/category--2--324.webp"
-                alt="Category image"
-              />
-              <figcaption class="category__title">
-                Headphones & earbuds
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="categories__item category">
-            <figure class="category__info">
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--3--672.webp  1x,
-                  ./images/category--3--1344.webp 2x,
-                  ./images/category--3--2016.webp 3x
-                "
-                src="./images/category--3--672.webp"
-                alt="Category image"
-              />
-
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--4--324.webp 1x,
-                  ./images/category--4--648.webp 2x,
-                  ./images/category--4--972.webp 3x
-                "
-                src="./images/category--4--324.webp"
-                alt="Category image"
-              />
-              <figcaption class="category__title">Speakers</figcaption>
-            </figure>
-          </li>
-
-          <li class="categories__item category">
-            <figure class="category__info">
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--5--324.webp 1x,
-                  ./images/category--5--648.webp 2x,
-                  ./images/category--5--972.webp 3x
-                "
-                src="./images/category--5--324.webp"
-                alt="Category image"
-              />
-
-              <img
-                class="category__image"
-                srcset="
-                  ./images/category--6--672.webp  1x,
-                  ./images/category--6--1344.webp 2x,
-                  ./images/category--6--2016.webp 3x
-                "
-                src="./images/category--6--672.webp"
-                alt="Category image"
-              />
-              <figcaption class="category__title">Audio sunglasses</figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="page__section categories" id="categories" hidden>
+        <div class="container">
+          <h2 class="page__section-title">
+            Browse Bose
+            <br />
+            products by category
+          </h2>
+          <ul class="categories__list">
+            <li class="categories__item category">
+              <figure class="category__info">
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--1--672.webp  1x,
+                    ./images/category--1--1344.webp 2x,
+                    ./images/category--1--2016.webp 3x
+                  "
+                  src="./images/category--1--672.webp"
+                  alt="Category image"
+                />
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--2--324.webp 1x,
+                    ./images/category--2--648.webp 2x,
+                    ./images/category--2--972.webp 3x
+                  "
+                  src="./images/category--2--324.webp"
+                  alt="Category image"
+                />
+                <figcaption class="category__title">
+                  Headphones & earbuds
+                </figcaption>
+              </figure>
+            </li>
+            <li class="categories__item category">
+              <figure class="category__info">
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--3--672.webp  1x,
+                    ./images/category--3--1344.webp 2x,
+                    ./images/category--3--2016.webp 3x
+                  "
+                  src="./images/category--3--672.webp"
+                  alt="Category image"
+                />
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--4--324.webp 1x,
+                    ./images/category--4--648.webp 2x,
+                    ./images/category--4--972.webp 3x
+                  "
+                  src="./images/category--4--324.webp"
+                  alt="Category image"
+                />
+                <figcaption class="category__title">Speakers</figcaption>
+              </figure>
+            </li>
+            <li class="categories__item category">
+              <figure class="category__info">
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--5--324.webp 1x,
+                    ./images/category--5--648.webp 2x,
+                    ./images/category--5--972.webp 3x
+                  "
+                  src="./images/category--5--324.webp"
+                  alt="Category image"
+                />
+                <img
+                  class="category__image"
+                  srcset="
+                    ./images/category--6--672.webp  1x,
+                    ./images/category--6--1344.webp 2x,
+                    ./images/category--6--2016.webp 3x
+                  "
+                  src="./images/category--6--672.webp"
+                  alt="Category image"
+                />
+                <figcaption class="category__title">
+                  Audio sunglasses
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section about">
-        <h2 class="section__title">
-          Why buy direct
-          <br />
-          from Bose
-        </h2>
-        <article class="about__description">
-          <p class="about__subtitles about__subtitles--important">
-            Free 2-day shipping and returns 90-day risk-free trial World class
-            customer service My Bose account management
-          </p>
-          <p class="about__subtitles">
-            A great product is more than what’s in the box. It’s a promise of
-            premium performance, world-class support, and everything you expect
-            from a trusted brand. It’s just one of many reasons why you’ll shop
-            with confidence on Bose.com.
-          </p>
-        </article>
+      <section class="page__section about" id="about">
+        <div class="container">
+          <h2 class="page__section-title">
+            Why buy direct
+            <br />
+            from Bose
+          </h2>
+          <article class="about__description">
+            <p class="about__subtitles about__subtitles--important">
+              Free 2-day shipping and returns 90-day risk-free trial World class
+              customer service My Bose account management
+            </p>
+            <p class="about__subtitles">
+              A great product is more than what’s in the box. It’s a promise of
+              premium performance, world-class support, and everything you
+              expect from a trusted brand. It’s just one of many reasons why
+              you’ll shop with confidence on Bose.com.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
-    
+
     <footer class="footer"></footer>
   </body>
 </html>

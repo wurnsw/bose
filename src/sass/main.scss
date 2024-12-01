@@ -1,1 +1,15 @@
-body{background-color: bisque;}
+@import "utils/variables";
+@import "utils/reset";
+@import "utils/normalize";
+@import "utils/mixins";
+
+@import "components/page";
+@import "components/container";
+@import "components/header";
+@import "components/top";
+@import "components/nav";
+@import "components/recommended";
+@import "components/product";
+@import "components/categories";
+@import "components/category";
+@import "components/about";
