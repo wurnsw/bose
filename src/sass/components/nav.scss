@@ -1,0 +1,45 @@
+.nav {
+  @include headerTop-padding;
+
+  height: 100vh;
+
+  background-color: #e8eff9;
+
+  &__top {
+    margin-bottom: 36px;
+
+    @include onTablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    padding-bottom: 8px;
+
+    width: max-content;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 250ms;
+
+    @include onDesktop {
+      &:hover {
+        border-color: $font-main-color;
+      }
+    }
+  }
+}

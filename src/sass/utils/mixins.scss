@@ -45,3 +45,32 @@
     @include bgImage;
   }
 }
+
+@mixin headerTop-padding {
+  padding: 36px 0 32px;
+
+  @include onTablet {
+    padding: 64px 0 40px;
+  }
+
+  @include onDesktop {
+    padding: 64px 0;
+  }
+}
+
+@mixin titleTypography {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+
+  @include onTablet {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include onDesktop {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}

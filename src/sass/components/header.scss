@@ -6,39 +6,20 @@
   @include bg-pixelRatio-3;
 
   &__content {
-    padding: 36px 0 32px;
+    @include headerTop-padding;
 
     height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    @include onTablet {
-      padding: 64px 0 40px;
-    }
-
-    @include onDesktop {
-      padding: 64px 0;
-    }
   }
 
   &__title {
-    font-size: 32px;
     font-style: italic;
     font-weight: 800;
-    line-height: 32px;
-    letter-spacing: -1.5px;
-    
-    @include onTablet {
-      font-size: 40px;
-      line-height: 40px;
-    }
+    @include titleTypography;
 
-    @include onDesktop {
-      font-size: 48px;
-      line-height: 48px;
-    }
   }
 
   &__sound-image {
