@@ -250,4 +250,53 @@ address {
   }
 }
 
+.recommended__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+@media screen and (min-width: 744px) {
+  .recommended__list {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .recommended__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.product__image {
+  margin-bottom: 32px;
+  height: 277px;
+}
+@media screen and (min-width: 744px) {
+  .product__image {
+    height: 387px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__image {
+    height: 320px;
+  }
+}
+.product__name {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.product__description {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 23px;
+}
+.product__price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
 /*# sourceMappingURL=/main.07544d9b.css.map */
