@@ -55,6 +55,7 @@ address {
 }
 .page__section {
   padding-bottom: 120px;
+  background-color: white;
 }
 .page__section:first-child {
   padding-top: 120px;
@@ -297,6 +298,43 @@ address {
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  height: 200px;
+  background-image: url("/bg--footer.4b9a523f.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer {
+    background-image: url("/bg--footer@2x.cc8e5300.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .footer {
+    background-image: url("/bg--footer@3x.928d9b96.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 744px) {
+  .footer {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 460px;
+  }
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
