@@ -1,8 +1,16 @@
 .product {
+ 
+
+
+
   &__image {
     margin-bottom: 32px;
 
     height: 277px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
 
     @include onTablet {
       height: 387px;
@@ -12,7 +20,7 @@
     }
   }
 
-  &__name {
+  &__title {
     margin-bottom: 8px;
 
     @include secondaryTypography;

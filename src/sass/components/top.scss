@@ -4,6 +4,9 @@
   align-items: center;
 
   &__logo {
+    background-image: url("../images/logo.png");
+    @include bgImage;
+
     width: 127px;
     height: 16px;
 

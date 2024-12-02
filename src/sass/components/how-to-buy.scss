@@ -1,4 +1,4 @@
-.about {
+.how-to-buy {
   &__content {
     display: flex;
     flex-direction: column;
@@ -11,9 +11,13 @@
 
   &__title {
     text-align: start;
+
+    @include onTablet {
+      margin-bottom: 0px;
+    }
   }
 
-  &__description {
+  &__subtitles {
     @include onTablet {
       width: 288px;
     }
@@ -23,15 +27,18 @@
     }
   }
 
-  &__subtitles {
+  &__benefits-list {
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include secondaryTypography;
+  }
+
+  &__description {
     font-size: 16px;
     line-height: 27px;
-
-    &--important {
-      margin-bottom: 40px;
-
-      @include secondaryTypography;
-      line-height: 43px;
-    }
   }
 }

@@ -19,7 +19,6 @@
     font-style: italic;
     font-weight: 800;
     @include titleTypography;
-
   }
 
   &__sound-image {
@@ -33,6 +32,12 @@
 
       width: 64px;
       height: 76px;
+
+      transition: transform 300ms;
+
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
 }
