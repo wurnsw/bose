@@ -347,6 +347,13 @@ a {
   width: 130px;
   object-fit: cover;
   object-position: center;
+  transition: transform 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .category__image:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px lightgray;
+  }
 }
 @media screen and (min-width: 744px) {
   .category__image--square {
