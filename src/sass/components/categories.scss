@@ -1,7 +1,6 @@
 .categories {
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-items: center;
     gap: 40px;
 

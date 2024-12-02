@@ -1,13 +1,9 @@
 .how-to-buy {
   &__content {
-    display: flex;
-    flex-direction: column;
-
-    
+    @include flexColumn;
 
     @include onTablet {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flexRow-Between;
     }
   }
 
@@ -32,8 +28,7 @@
   &__benefits-list {
     margin-bottom: 40px;
 
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     gap: 16px;
 
     @include secondaryTypography;

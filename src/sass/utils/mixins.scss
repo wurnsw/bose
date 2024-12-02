@@ -45,6 +45,7 @@
     @include bgImage;
   }
 }
+
 @mixin bg-footer-pixelRatio-2 {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -100,4 +101,14 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRow-Between{
+  flex-direction: row;
+  justify-content: space-between;
 }

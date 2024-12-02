@@ -1,7 +1,6 @@
 .recommended {
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-items: center;
 
     gap: 48px;
@@ -11,8 +10,8 @@
     }
 
     @include onDesktop {
-      flex-direction: row;
-      justify-content: space-between;
+      @include flexRow-Between;
+
       gap: 24px;
     }
   }

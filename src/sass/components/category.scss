@@ -1,7 +1,6 @@
 .category {
   &__info {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     gap: 16px;
   }
 

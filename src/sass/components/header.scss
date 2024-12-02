@@ -10,8 +10,7 @@
 
     height: 100vh;
 
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     justify-content: space-between;
   }
 
