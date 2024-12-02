@@ -21,6 +21,14 @@
 
     transition: transform 250ms;
 
+    @include onDesktop {
+      &:hover {
+        transform: scale(1.03);
+
+        box-shadow: 5px 5px 5px $hover-scale-shadow;
+      }
+    }
+
     &--square {
       @include onTablet {
         width: 184px;
@@ -39,12 +47,6 @@
       @include onDesktop {
         width: 672px;
       }
-    }
-
-    &:hover {
-      transform: scale(1.03);
-
-      box-shadow: 5px 5px 5px $hover-scale-shadow;
     }
   }
 
