@@ -19,7 +19,7 @@
     object-fit: cover;
     object-position: center;
 
-    transition: transform 250ms;
+    transition: transform 250ms, box-shadow 250ms;
 
     @include onDesktop {
       &:hover {
