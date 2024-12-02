@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/bg--header.webp":[["bg--header.429ad84f.webp","images/bg--header.webp"],"images/bg--header.webp"],"./../images/bg--header@2x.webp":[["bg--header@2x.10b0a49b.webp","images/bg--header@2x.webp"],"images/bg--header@2x.webp"],"./../images/bg--header@3x.webp":[["bg--header@3x.0fd2fd27.webp","images/bg--header@3x.webp"],"images/bg--header@3x.webp"],"./../images/Icon-Burger-menu.png":[["Icon-Burger-menu.b4f547a6.png","images/Icon-Burger-menu.png"],"images/Icon-Burger-menu.png"],"./../images/Icon-Burger-menu-hover.png":[["Icon-Burger-menu-hover.24817e5f.png","images/Icon-Burger-menu-hover.png"],"images/Icon-Burger-menu-hover.png"],"./../images/Icon-Close.png":[["Icon-Close.8f0ebdf5.png","images/Icon-Close.png"],"images/Icon-Close.png"],"./../images/bg--footer.webp":[["bg--footer.4b9a523f.webp","images/bg--footer.webp"],"images/bg--footer.webp"],"./../images/bg--footer@2x.webp":[["bg--footer@2x.cc8e5300.webp","images/bg--footer@2x.webp"],"images/bg--footer@2x.webp"],"./../images/bg--footer@3x.webp":[["bg--footer@3x.928d9b96.webp","images/bg--footer@3x.webp"],"images/bg--footer@3x.webp"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../images/bg--header.webp":[["bg--header.429ad84f.webp","images/bg--header.webp"],"images/bg--header.webp"],"./../images/bg--header@2x.webp":[["bg--header@2x.10b0a49b.webp","images/bg--header@2x.webp"],"images/bg--header@2x.webp"],"./../images/bg--header@3x.webp":[["bg--header@3x.0fd2fd27.webp","images/bg--header@3x.webp"],"images/bg--header@3x.webp"],"./../images/logo.png":[["logo.6023b87e.png","images/logo.png"],"images/logo.png"],"./../images/Icon-Burger-menu.png":[["Icon-Burger-menu.b4f547a6.png","images/Icon-Burger-menu.png"],"images/Icon-Burger-menu.png"],"./../images/Icon-Burger-menu-hover.png":[["Icon-Burger-menu-hover.24817e5f.png","images/Icon-Burger-menu-hover.png"],"images/Icon-Burger-menu-hover.png"],"./../images/Icon-Close.png":[["Icon-Close.8f0ebdf5.png","images/Icon-Close.png"],"images/Icon-Close.png"],"./../images/bg--footer.webp":[["bg--footer.4b9a523f.webp","images/bg--footer.webp"],"images/bg--footer.webp"],"./../images/bg--footer@2x.webp":[["bg--footer@2x.cc8e5300.webp","images/bg--footer@2x.webp"],"images/bg--footer@2x.webp"],"./../images/bg--footer@3x.webp":[["bg--footer@3x.928d9b96.webp","images/bg--footer@3x.webp"],"images/bg--footer@3x.webp"],"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50424" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62840" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
