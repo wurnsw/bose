@@ -1,0 +1,52 @@
+.category {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__image-container {
+    display: flex;
+    gap: 20px;
+
+    @include onDesktop {
+      gap: 24px;
+    }
+  }
+
+  &__image {
+    width: 130px;
+
+    object-fit: cover;
+    object-position: center;
+
+    &--square {
+      @include onTablet {
+        width: 184px;
+      }
+
+      @include onDesktop {
+        width: 324px;
+      }
+    }
+
+    &--wide {
+      @include onTablet {
+        width: 392px;
+      }
+
+      @include onDesktop {
+        width: 672px;
+      }
+    }
+  }
+
+  &__title {
+    @include secondaryTypography;
+
+    @include onTablet {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+}
